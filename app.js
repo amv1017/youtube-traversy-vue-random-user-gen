@@ -9,7 +9,9 @@ const app = Vue.createApp({
 			picture: 'https://randomuser.me/api/portraits/men/10.jpg',
 		}
 	},
-
+	async created() {
+		this.getUser() // default values will be replaced
+	},
 	methods: {
 		async getUser() {
 			const res = await fetch('https://randomuser.me/api')
