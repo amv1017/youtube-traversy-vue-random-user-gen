@@ -9,7 +9,7 @@ const app = Vue.createApp({
 			picture: 'https://randomuser.me/api/portraits/men/10.jpg',
 		}
 	},
-	async created() {
+	created() {
 		this.getUser() // default values will be replaced
 	},
 	methods: {
